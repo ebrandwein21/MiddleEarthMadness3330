@@ -39,7 +39,7 @@ public abstract class MiddleEarthCharacter {
 		this.power= power;
 	}
 	
-	 boolean attack(MiddleEarthCharacter target) {
+	public boolean attack(MiddleEarthCharacter target) {
 		
 		
 		return true; //placeholder for now
@@ -47,7 +47,7 @@ public abstract class MiddleEarthCharacter {
 	
 	 String getRace()
 	{
-		return "hi"; //placeholder for now
+		return name; 
 	}
 	
 	void displayInfo() {
