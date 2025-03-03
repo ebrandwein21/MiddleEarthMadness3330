@@ -39,7 +39,7 @@ public abstract class MiddleEarthCharacter {
 		this.power= power;
 	}
 	
-	public boolean attack(MiddleEarthCharacter target) {
+	 boolean attack(MiddleEarthCharacter target) {
 		
 		
 		return true; //placeholder for now
