@@ -19,7 +19,7 @@ public abstract class Human extends MiddleEarthCharacter{
 		 @Override
 		  String getRace()
 			{
-				return "hi"; //placeholder for now
+				return "Human"; //placeholder for now
 			}
 }
 

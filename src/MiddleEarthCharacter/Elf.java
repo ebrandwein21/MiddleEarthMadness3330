@@ -22,6 +22,6 @@ public abstract class Elf extends MiddleEarthCharacter {
 		String getRace()
 		{
 			super.getRace();
-			return "hi"; //placeholder for now
+			return "Elf"; //placeholder for now
 		}
 }

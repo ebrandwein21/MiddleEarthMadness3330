@@ -19,7 +19,7 @@ public abstract class Dwarf extends MiddleEarthCharacter{
 		String getRace()
 		{
 			super.getRace();
-			return "hi"; //placeholder for now
+			return "Dwarf"; //placeholder for now
 		}
 }
 

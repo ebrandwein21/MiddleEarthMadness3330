@@ -21,6 +21,6 @@ public abstract class Wizard extends MiddleEarthCharacter {
 		String getRace()
 		{
 			super.getRace();
-			return "hi"; //placeholder for now
+			return "Wizard"; //placeholder for now
 		}
 }

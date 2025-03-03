@@ -21,7 +21,7 @@ public abstract class Orc extends MiddleEarthCharacter {
 		String getRace()
 		{
 			super.getRace();
-			return "hi"; //placeholder for now
+			return "Orc"; //placeholder for now
 		}
 }
 
