@@ -19,7 +19,7 @@ public abstract class MiddleEarthCharacter {
 		return name;
 	}
 	
-	public void setBook(String name) {
+	public void setName(String name) {
 		this.name = name;
 	}
 	
@@ -27,7 +27,7 @@ public abstract class MiddleEarthCharacter {
 		return health;
 	}
 	
-	public void setAuthor(double health) {
+	public void setHealth(double health) {
 		this.health = health;
 	}
 	
@@ -46,6 +46,7 @@ public abstract class MiddleEarthCharacter {
 	 void displayInfo() {
 		
 	}
+	 
 	
 	
 	
