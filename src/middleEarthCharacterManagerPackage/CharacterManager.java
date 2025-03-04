@@ -13,10 +13,20 @@ public class CharacterManager {
 	}
 	
 	boolean addCharacter(MiddleEarthCharacter c){
-		return true;
+		if(characters.length == size){
+			MiddleEarthCharacter[] newArray = new MiddleEarthCharacter[2 * characters.length];
+			System.arraycopy(c, 0, newArray, 0, size);
+		}
+		characters[size] = c;
+		if(characters[size] == c) {
+			size++;
+			return true;
+		}
+		return false;
 	}
 	
 	MiddleEarthCharacter getCharacter(String name){
+	
 		return null;
 	}
 	
