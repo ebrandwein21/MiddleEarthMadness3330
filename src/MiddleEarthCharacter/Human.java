@@ -13,7 +13,7 @@ public abstract class Human extends MiddleEarthCharacter{
 		@Override
 		 boolean attack(MiddleEarthCharacter target)
 		{
-			super.attack(target);
+			
 			return true; //placeholder for now
 		}
 		 @Override

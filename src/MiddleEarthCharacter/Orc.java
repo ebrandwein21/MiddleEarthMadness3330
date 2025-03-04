@@ -13,14 +13,13 @@ public abstract class Orc extends MiddleEarthCharacter {
 		@Override
 	    boolean attack(MiddleEarthCharacter target)
 		{
-			super.attack(target);
 			return true; //placeholder for now
 		}
 		
 		@Override
 		String getRace()
 		{
-			super.getRace();
+			
 			return "Orc"; //placeholder for now
 		}
 }

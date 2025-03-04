@@ -14,14 +14,14 @@ public abstract class Elf extends MiddleEarthCharacter {
 		@Override
 		public boolean attack(MiddleEarthCharacter target)
 		{
-			super.attack(target);
+			
 			return true; //placeholder for now
 		}
 		
 		@Override
 		String getRace()
 		{
-			super.getRace();
+			
 			return "Elf"; //placeholder for now
 		}
 }

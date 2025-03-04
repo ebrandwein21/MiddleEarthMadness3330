@@ -12,13 +12,13 @@ public abstract class Dwarf extends MiddleEarthCharacter{
 		@Override
 		public boolean attack(MiddleEarthCharacter target)
 		{
-			super.attack(target);
+			
 			return true; //placeholder for now
 		}
 		@Override
 		String getRace()
 		{
-			super.getRace();
+			
 			return "Dwarf"; //placeholder for now
 		}
 }

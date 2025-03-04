@@ -39,18 +39,11 @@ public abstract class MiddleEarthCharacter {
 		this.power= power;
 	}
 	
-	 boolean attack(MiddleEarthCharacter target) {
-		
-		
-		return true; //placeholder for now
-	}
+	 abstract boolean attack(MiddleEarthCharacter target);
 	
-	 String getRace()
-	{
-		return name; 
-	}
+	 abstract String getRace();
 	
-	void displayInfo() {
+	 void displayInfo() {
 		
 	}
 	
