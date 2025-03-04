@@ -20,8 +20,8 @@ public class MiddleEarthCouncil {
 		return instance;
 	}
 	
-	CharacterManager getCharacterManager() {
-		return CharacterManager; // Placeholder, not sure if entirely correct implementation 
-	}
+	//CharacterManager getCharacterManager() {
+		//return CharacterManager; // Placeholder, not sure if entirely correct implementation 
+	//}
 	
 }

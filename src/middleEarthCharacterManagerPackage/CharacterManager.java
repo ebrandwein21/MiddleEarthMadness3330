@@ -1,6 +1,6 @@
 package middleEarthCharacterManagerPackage;
 
-import MiddleEarthCharacter.MiddleEarthCharacter;
+import MiddleEarthCharacterPackage.MiddleEarthCharacter;
 
 public class CharacterManager {
 	

@@ -1,4 +1,4 @@
-package MiddleEarthCharacter;
+package MiddleEarthCharacterPackage;
 
 public abstract class MiddleEarthCharacter {
 
@@ -29,7 +29,7 @@ public abstract class MiddleEarthCharacter {
 	
 	public void setHealth(double health) {
 		this.health = health;
-	}
+		}
 	
 	public double getPower() {
 		return power;
@@ -43,9 +43,14 @@ public abstract class MiddleEarthCharacter {
 	
 	 abstract String getRace();
 	
-	 void displayInfo() {
-		
+	  void displayInfo() {
+
+		System.out.println("Name" + " " + "=" + " " +  name);
+		System.out.println("Health" + " " + "=" + " " + health);
+		System.out.println("Power" + " " +  "=" + " " + power);	
 	}
+	 
+	 
 	 
 	
 	
