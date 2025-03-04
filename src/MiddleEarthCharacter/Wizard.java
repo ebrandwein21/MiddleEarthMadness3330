@@ -12,9 +12,17 @@ public abstract class Wizard extends MiddleEarthCharacter {
 		
 		@Override
 	    boolean attack(MiddleEarthCharacter target)
-		{
+			{
 			
-			return true; //placeholder for now
+			if(target.getRace().equals("Human") || target.getRace().equals("Wizard"))
+				{
+				    return false;
+				}
+			if(target.getRace().equals("Dwarf"))
+			{
+				power = power * 1.5;
+			}
+			return true;
 		}
 		
 		@Override
