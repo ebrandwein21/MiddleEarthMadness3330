@@ -2,6 +2,11 @@ package middleEarthCharacterManagerPackage;
 
 import MiddleEarthCharacterPackage.MiddleEarthCharacter;
 import MiddleEarthCharacterPackage.Orc;
+import MiddleEarthCharacterPackage.Human;
+import MiddleEarthCharacterPackage.Wizard;
+import MiddleEarthCharacterPackage.Dwarf;
+import MiddleEarthCharacterPackage.Elf;
+
 
 public class CharacterManager {
 	
@@ -55,21 +60,48 @@ public class CharacterManager {
 		return false;
 	}
 	
-	MiddleEarthCharacter getCharacter(String name){
 	
+	
+	MiddleEarthCharacter getCharacter(String name){
+		for(MiddleEarthCharacter character : characters)
+		{
+			if(character != null)
+			{
+				 System.out.println(name);
+				 
+			}
+		}
+			 
 		return null;
 	}
 	
 	boolean updateCharacter(MiddleEarthCharacter character, String name, int health, int power){
-		return true;
+		
+		if(character == null)
+		{
+			return false;
+		}
+		if(character.getName() != name || character.getHealth() != health || character.getPower() != power)
+		{
+			character.setName(name);
+			character.setPower(power);
+			character.setHealth(health);
+			System.out.println(health);
+			System.out.println(power);
+			return true;
+		}
+		return false;
 	}
-	
+		
 	boolean deleteCharacter(MiddleEarthCharacter character) {
 		return true;
 	}
 	
 	void displayAllCharacters() {
-		
+		for(MiddleEarthCharacter character : characters)
+		{
+		  	//character.displayInfo();
+		}
 	}
 	
 	

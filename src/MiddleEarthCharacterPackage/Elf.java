@@ -58,7 +58,7 @@ public class Elf extends MiddleEarthCharacter {
 		 */
 		
 		@Override
-	     void displayInfo()
+	    public void displayInfo()
 		{
 			super.displayInfo();
 		}

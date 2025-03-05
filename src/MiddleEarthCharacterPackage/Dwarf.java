@@ -24,7 +24,7 @@ public class Dwarf extends MiddleEarthCharacter{
 		 */
 		
 		@Override
-		public boolean attack(MiddleEarthCharacter target)
+		 boolean attack(MiddleEarthCharacter target)
          {
 			double damage;
 			double specialPower = power * 1.5;
@@ -59,7 +59,7 @@ public class Dwarf extends MiddleEarthCharacter{
 		 */
 		
 		@Override
-		  void displayInfo()
+		 public void displayInfo()
 		{
 			super.displayInfo();
 				

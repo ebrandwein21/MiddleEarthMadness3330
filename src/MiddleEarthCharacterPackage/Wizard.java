@@ -56,7 +56,7 @@ public class Wizard extends MiddleEarthCharacter {
 		 * calls the display method of the parent class with the super keyword
 		 */
 		@Override
-	     void displayInfo()
+	     public void displayInfo()
 		{
 			super.displayInfo();
 		}

@@ -25,7 +25,7 @@ public class Human extends MiddleEarthCharacter{
 		 */
 		
 		@Override
-		public boolean attack(MiddleEarthCharacter target)
+		 boolean attack(MiddleEarthCharacter target)
         {
 			double damage;
 			double specialPower = power * 1.5;
@@ -58,7 +58,7 @@ public class Human extends MiddleEarthCharacter{
 			 * calls the display method of the parent class with the super keyword
 			 */
 		 @Override
-		   void displayInfo()
+		  public void displayInfo()
 			{
 			    super.displayInfo();
 			}
