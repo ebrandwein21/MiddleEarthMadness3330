@@ -70,10 +70,10 @@ public class CharacterManager {
 	
 	
 	MiddleEarthCharacter getCharacter(String name){
-		
+		  for(MiddleEarthCharacter newCharacter : characters)
 			if(!name.equals(null))
 			{
-				 System.out.println(name);
+				 System.out.println(newCharacter.getName());
 			} 
 		return null;
 	}
@@ -94,7 +94,7 @@ public class CharacterManager {
 		{
 			return false;
 		}
-		if(character.getName() != name || character.getHealth() != health || character.getPower() != power) {
+		if(character.getName().equals(name) || character.getHealth() != health || character.getPower() != power) {
 			character.setPower(power);
 			character.setName(name);
 			character.setHealth(health);

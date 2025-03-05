@@ -13,9 +13,9 @@ public class Part3Test {
 	CharacterManager cm = council.getCharacterManager();
 	System.out.println(cm.addCharacter(orc));
 	System.out.println("doug");
-	System.out.println(cm.updateCharacter(orc, "steve", 10, 10));
-	System.out.println("doug");
-	System.out.println(cm.updateCharacter(human, "john", 1000, 1000));
+	System.out.println(cm.updateCharacter(orc, "doug", 1, 1));
+	System.out.println("joe");
+	System.out.println(cm.updateCharacter(human, "joe", 1, 1));
 	System.out.println(cm.addCharacter(human));
 	cm.displayAllCharacters();
 	
