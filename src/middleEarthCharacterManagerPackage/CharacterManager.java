@@ -69,13 +69,12 @@ public class CharacterManager {
 	 */
 	
 	MiddleEarthCharacter getCharacter(String name){
-		for(MiddleEarthCharacter character : characters)
-		{
-			if(character.getName() != null && character.getName() == name)
+		
+			if(name != null)
 			{
-				 System.out.println(character.getName());
+				 System.out.println(name);
 			}
-		}
+		
 			 
 		return null; //returning null no matter what need to fix. 
 	}
