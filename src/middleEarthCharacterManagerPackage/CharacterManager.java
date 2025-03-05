@@ -60,20 +60,33 @@ public class CharacterManager {
 		return false;
 	}
 	
-	
+	/**
+     call a character by name by looping through a instance in the array. If the character name does not exist or does not equal the character's name, return that the name is null
+	 * If the character name does not exist, return that the name is null, if the character does exist, print the character name 
+	 * @param name
+	 * Character the user would like to add to the array.
+	 * @return null if the character name is empty or wrong
+	 */
 	
 	MiddleEarthCharacter getCharacter(String name){
 		for(MiddleEarthCharacter character : characters)
 		{
-			if(character != null)
+			if(character.getName() != null && character.getName() == name)
 			{
-				 System.out.println(name);
-				 
+				 System.out.println(character.getName());
 			}
 		}
 			 
-		return null;
+		return null; //returning null no matter what need to fix. 
 	}
+	
+	/**
+     update a character by changing its attributes and then checks if the character has been updated by comparing the updated attributes to the attributes assigned to the character 
+	 * If the character does not exist, return that the name is false. if the character does exist and currently has different attributes then when first initialized, set these attributes and return true
+	 * @param character, name, health, power
+	 * the character and its updated attributes 
+	 * @return false if the character is null, return true if character attributes have changed, returned false otherwise
+	 */
 	
 	boolean updateCharacter(MiddleEarthCharacter character, String name, int health, int power){
 		
