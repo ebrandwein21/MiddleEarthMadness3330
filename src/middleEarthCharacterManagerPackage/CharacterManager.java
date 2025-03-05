@@ -61,10 +61,10 @@ public class CharacterManager {
 	}
 	
 	/**
-     call a character by name by looping through a instance in the array. If the character name does not exist or does not equal the character's name, return that the name is null
-	 * If the character name does not exist, return that the name is null, if the character does exist, print the character name 
+     call a character by name by checking if the character name exists
+	 * If the character name does not exist, return that the name is null
 	 * @param name
-	 * Character the user would like to add to the array.
+	 * the name we are printing
 	 * @return null if the character name is empty or wrong
 	 */
 	
@@ -73,9 +73,7 @@ public class CharacterManager {
 			if(name != null)
 			{
 				 System.out.println(name);
-			}
-		
-			 
+			} 
 		return null; //returning null no matter what need to fix. 
 	}
 	
