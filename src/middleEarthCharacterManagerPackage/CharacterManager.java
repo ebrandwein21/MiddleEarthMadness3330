@@ -87,17 +87,14 @@ public class CharacterManager {
 	
 	boolean updateCharacter(MiddleEarthCharacter character, String name, int health, int power){
 		
+		
 		if(character == null)
 		{
 			return false;
 		}
-		if(character.getName() != name || character.getHealth() != health || character.getPower() != power)
-		{
-			character.setName(name);
-			character.setPower(power);
-			character.setHealth(health);
-			System.out.println(health);
+		if(character.getName() != name || character.getHealth() != health || character.getPower() != power) {
 			System.out.println(power);
+			System.out.println(character.getPower()); 
 			return true;
 		}
 		return false;

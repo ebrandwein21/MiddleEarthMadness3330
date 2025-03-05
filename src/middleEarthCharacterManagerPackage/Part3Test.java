@@ -12,6 +12,7 @@ public class Part3Test {
 	MiddleEarthCouncil council = MiddleEarthCouncil.getInstance();
 	CharacterManager cm = council.getCharacterManager();
 	System.out.println(cm.addCharacter(orc));
+	System.out.println(cm.getCharacter("doug"));
 	System.out.println(cm.updateCharacter(orc, "doug", 10, 10));
 	System.out.println(cm.getCharacter("doug"));
 	System.out.println(cm.addCharacter(human));
