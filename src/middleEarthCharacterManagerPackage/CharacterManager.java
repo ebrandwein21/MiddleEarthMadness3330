@@ -61,8 +61,8 @@ public class CharacterManager {
 	}
 	
 	/**
-     call a character by name by checking if the character name exists
-	 * If the character name does not exist, return that the name is null
+      call a character by name by checking if the character name exists
+	 * If the character name does not exist, return that the name is null, if the character does exist, print name 
 	 * @param name
 	 * the name we are printing
 	 * @return null if the character name is empty or wrong
