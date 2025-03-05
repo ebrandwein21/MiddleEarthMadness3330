@@ -68,16 +68,16 @@ public class CharacterManager {
 	 * @return null if the character name is empty or wrong
 	 */
 	
-	/*
+	
 	MiddleEarthCharacter getCharacter(String name){
 		
-			if(name != null)
+			if(!name.equals(null))
 			{
 				 System.out.println(name);
 			} 
-		//what do i return
+		return null;
 	}
-	*/
+	
 	
 	/**
      update a character by changing its attributes and then checks if the character has been updated by comparing the updated attributes to the attributes assigned to the character 
@@ -95,8 +95,6 @@ public class CharacterManager {
 			return false;
 		}
 		if(character.getName() != name || character.getHealth() != health || character.getPower() != power) {
-			System.out.println(power);
-			System.out.println(character.getPower()); 
 			character.setPower(power);
 			character.setName(name);
 			character.setHealth(health);
