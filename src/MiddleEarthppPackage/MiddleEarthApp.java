@@ -182,17 +182,6 @@ public class MiddleEarthApp {
 					c = cm.getCharacter(scanner.next());
 					if(c == null) {
 						System.out.println("Try again");
-<<<<<<< HEAD
-				}
-				else 
-				{
-				   break;
-				}
-
-				}
-				cm.deleteCharacter(c);
-
-=======
 					}
 					else {
 						System.out.println("character to be deleted: " + c.getName());
@@ -205,7 +194,6 @@ public class MiddleEarthApp {
 						break;
 					}
 				}
->>>>>>> e981a403f371f24623753c426d66603451bbb28a
 			}
 			else if(userChoice == 5) {
 				
