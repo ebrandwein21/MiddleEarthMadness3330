@@ -61,20 +61,20 @@ public class CharacterManager {
 	}
 	
 	/**
-      call a character by name by checking if the character name exists
-	 * If the character name does not exist, return that the name is null, if the character does exist, print name 
+      getCharacter runs through the characters array searching for the name parameter, regardless of case.
 	 * @param name
-	 * the name we are printing
-	 * @return null if the character name is empty or wrong
+	 * the name we are searching for
+	 * @return If the name is found, the method will return the found character.
+	 * If not, it will print that the name was not found and return null.
 	 */
 	
-	
-	MiddleEarthCharacter getCharacter(String name){
-		  for(MiddleEarthCharacter newCharacter : characters)
-			if(!name.equals(null))
-			{
-				 System.out.println(newCharacter.getName());
-			} 
+	public MiddleEarthCharacter getCharacter(String name){
+		  for(int i = 0; i < size; i++) {
+			if(name.toLowerCase().equals(characters[i].getName().toLowerCase())){
+				 return characters[i];
+			}
+		  }
+		System.out.println("Couldn't find character");
 		return null;
 	}
 	
@@ -87,7 +87,7 @@ public class CharacterManager {
 	 * @return false if the character is null, return true if character attributes have changed, returned false otherwise
 	 */
 	
-	boolean updateCharacter(MiddleEarthCharacter character, String name, int health, int power){
+	public boolean updateCharacter(MiddleEarthCharacter character, String name, int health, int power){
 		
 		
 		if(character == null)
