@@ -102,7 +102,14 @@ public class CharacterManager {
 		}
 		return false;
 	}
-		
+	/**
+    
+     Deletes a character by iterating over the elementds to get the index of the element that the user chooses to be deleted, sets it to null and then
+	 * the elements to the right of the deleted character are then shifted to the left by one and the size of the array is also shrunk by 1. 
+	 * @param character
+	 * the character is used to help ensure the correct element is deleted
+	 * @return true if the deletion is successful 
+	 */	
 	boolean deleteCharacter(MiddleEarthCharacter character) {
 		
 		int index = 0;
