@@ -127,7 +127,7 @@ public class CharacterManager {
 		{			
 			characters[j] = characters[j + 1];
 		}
-		characters[size - 1] = null;
+		characters[size -1] = null;
 		size -= 1;
 		return true;
 	}
