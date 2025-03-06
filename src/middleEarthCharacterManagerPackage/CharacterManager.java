@@ -1,12 +1,6 @@
 package middleEarthCharacterManagerPackage;
 
 import MiddleEarthCharacterPackage.MiddleEarthCharacter;
-import MiddleEarthCharacterPackage.Orc;
-import MiddleEarthCharacterPackage.Human;
-import MiddleEarthCharacterPackage.Wizard;
-import MiddleEarthCharacterPackage.Dwarf;
-import MiddleEarthCharacterPackage.Elf;
-
 
 public class CharacterManager {
 	
