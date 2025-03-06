@@ -109,7 +109,7 @@ public class CharacterManager {
 		
 		for(int i = 0; i < size; i++)
 		{
-			if(characters[i].getName() == character.getName())
+			if(characters[i].getName().equals(character.getName()))
 			{
 				index = i;
 			}
@@ -117,30 +117,25 @@ public class CharacterManager {
 		characters[index] = null;
 		
 		for(int j = index; j < size - 1; j++)
-		{
-			//we want to delete the element at i and shift all elements to the the right left
-			
+		{			
 			characters[j] = characters[j + 1];
-			
 		}
 		size -= 1;
-		return false;
-		
+		return true;
 	}
 	
 	public void displayAllCharacters() {
 		for(MiddleEarthCharacter character : characters)
 		{
-			try {
+			if(character != null)
+			{
 		  System.out.println("name:" + " " + character.getName() + " " + "health:" + " " + character.getHealth() + " " + "power:" + " " + character.getPower());
 			}
-			catch(NullPointerException e)
-			{
-				System.out.print("NullPointerException caught");
-			}
+			
 		}
 	}
-	
-	
-	
 }
+	
+	
+	
+
