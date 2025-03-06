@@ -123,7 +123,53 @@ public class MiddleEarthApp {
 			else if(userChoice == 2) {
 				cm.displayAllCharacters();
 			}
+			
+			/*
+			 * User Choice 3 updates a character of the user's choice and allows them to change the character's name,
+			 * HP, and power. The character will then be updated with this new information. 
+			 */
 			else if(userChoice == 3) {
+				MiddleEarthCharacter c;
+				String name;
+				int health;
+				int power;
+				
+				System.out.println("Which character would you like to update?");
+				while(true) {
+					c = cm.getCharacter(scanner.next());
+					if(c == null) {
+						System.out.println("Try again");
+					}
+					else {
+						break;
+					}
+				}
+				System.out.println("What would you like this character's new name to be?");
+				name = scanner.next();
+				
+				System.out.println("What would you like this character's new health to be?");
+				while(true) {
+					try {
+						health = scanner.nextInt();
+						break;
+					} catch (Exception e) {
+						System.out.println("Input must be a whole number");
+						scanner.next();
+					}
+				}
+				
+				System.out.println("What would you like this character's new power to be?");
+				while(true) {
+					try {
+						power = scanner.nextInt();
+						break;
+					} catch (Exception e) {
+						System.out.println("Input must be a whole number");
+						scanner.next();
+					}
+				}
+				
+				cm.updateCharacter(c, name, health, power);
 				
 			}
 			else if(userChoice == 4) {
