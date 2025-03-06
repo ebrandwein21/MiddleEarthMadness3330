@@ -17,22 +17,6 @@ public class CharacterManager {
 		
 	}
 	
-	//Below constructor is commented out because not sure yet if it will be needed in final version.
-	
-	
-//	/**
-//	 * 
-//	 * this is a parameterized constructor that sets characters and size to its current instance
-//	 * @param characters, size
-//	 * Characters represents the character array and size represents the size of the array.
-//	 */
-//	public CharacterManager(MiddleEarthCharacter[] characters, int size) {
-//		this.characters = characters;
-//		this.size = size;
-//	}
-	
-	
-	
 	/**
 	 * This is a method allowing the user to add a character to the character array. If the array is null,
 	 * it will instantiate a new array and if it is full it will create a new one double the size and copy
@@ -131,13 +115,11 @@ public class CharacterManager {
 		{			
 			characters[j] = characters[j + 1];
 		}
-<<<<<<< HEAD
+
 		characters[size - 1] = null;
 		size--;
-=======
-		characters[size -1] = null;
-		size -= 1;
->>>>>>> 96fed8114e4825ade1faa829856e17339ca3b070
+
+
 		return true;
 	}
 	

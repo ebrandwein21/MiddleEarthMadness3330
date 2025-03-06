@@ -178,23 +178,20 @@ public class MiddleEarthApp {
 				while(true) {
 					System.out.println("Which character would you like to delete?");
 					c = cm.getCharacter(scanner.next());
-					System.out.println("character to be deleted");
 					if(c == null) {
 						System.out.println("Try again");
 					}
 					else {
-						cm.deleteCharacter(c);
+						System.out.println("character to be deleted: " + c.getName());
+						if(cm.deleteCharacter(c) == true) {
+							System.out.println("Successfully deleted character");
+						}
+						else {
+							System.out.println("Could not delete character");
+						}
 						break;
 					}
-					
-<<<<<<< HEAD
-=======
-					
->>>>>>> 96fed8114e4825ade1faa829856e17339ca3b070
 				}
-				cm.deleteCharacter(c);
-
-				
 			}
 			else if(userChoice == 5) {
 				
