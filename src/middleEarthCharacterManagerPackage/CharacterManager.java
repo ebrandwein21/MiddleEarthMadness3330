@@ -131,8 +131,13 @@ public class CharacterManager {
 		{			
 			characters[j] = characters[j + 1];
 		}
+<<<<<<< HEAD
 		characters[size - 1] = null;
 		size--;
+=======
+		characters[size -1] = null;
+		size -= 1;
+>>>>>>> 96fed8114e4825ade1faa829856e17339ca3b070
 		return true;
 	}
 	
