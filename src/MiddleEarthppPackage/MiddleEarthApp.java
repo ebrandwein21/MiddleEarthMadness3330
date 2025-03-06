@@ -220,7 +220,6 @@ public class MiddleEarthApp {
 				while(true) 
 				{
 					c = cm.getCharacter(scanner.next());
-					System.out.println("character to be deleted");
 					if(c == null) {
 						System.out.println("Try again");
 					}
