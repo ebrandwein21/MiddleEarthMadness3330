@@ -25,20 +25,22 @@ public class Human extends MiddleEarthCharacter{
 		 */
 		
 		@Override
-		 boolean attack(MiddleEarthCharacter target)
+		public boolean attack(MiddleEarthCharacter target)
         {
 			double damage;
 			double specialPower = power * 1.5;
 			
 			if(target.getRace().equals("Orc") || target.getRace().equals("Human"))
-				{
+			{
 				    return false;
-				}
+			}
+			
 			if(target.getRace().equals("Wizard"))
 			{
 			    damage = getPower() + specialPower;
 				target.setHealth(target.getHealth() - damage);
-			}		
+			}	
+			
 			damage = getPower();
 			target.setHealth(target.getHealth() - damage);
 			return true;
@@ -53,7 +55,8 @@ public class Human extends MiddleEarthCharacter{
 			{
 				return "Human"; //placeholder for now
 			}
-		 /*
+		 
+		    /*
 			 * left the concrete method in subclasses the same as parent method (at least for now) because they all implement the same thing as the parent class and overwriting the parent class causes the values to null
 			 * calls the display method of the parent class with the super keyword
 			 */

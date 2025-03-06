@@ -1,6 +1,6 @@
 package MiddleEarthCharacterPackage;
 
-public abstract class MiddleEarthCharacter {
+ public abstract class MiddleEarthCharacter {
 
 	private String name;
 	private double health;
@@ -17,7 +17,7 @@ public abstract class MiddleEarthCharacter {
 	 */
 	
 	
-	public MiddleEarthCharacter(String name, double health, double power) {
+	 MiddleEarthCharacter(String name, double health, double power) {
 		this.name = name;
 		this.health = health;
 		this.power = power;
@@ -83,7 +83,7 @@ public abstract class MiddleEarthCharacter {
 	 * initializes a variable of the MiddleEarthCharacter class called target that will represent the five subclasses(characters)
 	 */
 	
-	 abstract boolean attack(MiddleEarthCharacter target);
+	 public abstract boolean attack(MiddleEarthCharacter target);
 	/**
 	 * an abstract String method that can not be implemented on in the parent class, will be used to return each characters race for the target attribute in string form
 	 * 

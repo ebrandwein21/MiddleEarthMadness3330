@@ -24,20 +24,22 @@ public class Dwarf extends MiddleEarthCharacter{
 		 */
 		
 		@Override
-		 boolean attack(MiddleEarthCharacter target)
+		 public boolean attack(MiddleEarthCharacter target)
          {
 			double damage;
 			double specialPower = power * 1.5;
 			
 			if(target.getRace().equals("Wizard") || target.getRace().equals("Dwarf"))
-				{
+			{
 				    return false;
-				}
+			}
+			
 			if(target.getRace().equals("Elf"))
 			{
 			    damage = getPower() + specialPower;
 				target.setHealth(target.getHealth() - damage);
 			}
+			
 			damage = getPower();
 			target.setHealth(target.getHealth() - damage);
 			return true;
@@ -50,7 +52,6 @@ public class Dwarf extends MiddleEarthCharacter{
 		@Override
 		String getRace()
 		{
-			
 			return "Dwarf"; //placeholder for now
 		}
 		
@@ -61,8 +62,7 @@ public class Dwarf extends MiddleEarthCharacter{
 		@Override
 		 public void displayInfo()
 		{
-			super.displayInfo();
-				
+			super.displayInfo();		
 		}
 }
 

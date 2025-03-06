@@ -7,6 +7,7 @@ import MiddleEarthCharacterPackage.Human;
 public class Part3Test {
 	public static void main(String[] args) {
 	
+		//this is a test for part 3
 	Human human = new Human("joe", 1.0, 1.0);
 	Orc orc = new Orc("doug", 1.0, 1.0);
 	MiddleEarthCouncil council = MiddleEarthCouncil.getInstance();

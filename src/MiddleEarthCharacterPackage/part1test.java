@@ -9,6 +9,9 @@ public class part1test {
 public static void main(String[] args) {
 	
 	
+	//this is a test for part 1 
+	
+	
 	Orc orc = new Orc("Orc", 100.0, 25.0);
 	Human human = new Human("Human", 100.0, 35.0);
 	Dwarf dwarf = new Dwarf("Dwarf", 100.0, 5.0);

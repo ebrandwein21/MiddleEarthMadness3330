@@ -10,8 +10,8 @@ import MiddleEarthCharacterPackage.Elf;
 
 public class CharacterManager {
 	
-	MiddleEarthCharacter[] characters;
-	int size;
+    public MiddleEarthCharacter[] characters;
+	public int size;
 	
 	public CharacterManager() {
 		
@@ -62,7 +62,6 @@ public class CharacterManager {
 		return null;
 	}
 	
-	
 	/**
      update a character by changing its attributes and then checks if the character has been updated by comparing the updated attributes to the attributes assigned to the character 
 	 * If the character does not exist, return that the name is false. if the character does exist and currently has different attributes then when first initialized, set these attributes and return true
@@ -72,7 +71,6 @@ public class CharacterManager {
 	 */
 	
 	public boolean updateCharacter(MiddleEarthCharacter character, String name, int health, int power){
-		
 		
 		if(character == null)
 		{
@@ -94,6 +92,7 @@ public class CharacterManager {
 	 * the character is used to help ensure the correct element is deleted
 	 * @return true if the deletion is successful 
 	 */	
+	
 	public boolean deleteCharacter(MiddleEarthCharacter character) {
 		
 		int index = -1;
@@ -119,12 +118,10 @@ public class CharacterManager {
 		characters[size - 1] = null;
 		size--;
 
-
 		return true;
 	}
 	
 	/*
-	
 	 * Displays all characters in the characters list by checking iterating over the characters list and ensuring if the character is not null
 	 */	
 	public void displayAllCharacters() {
@@ -132,7 +129,9 @@ public class CharacterManager {
 		{
 			if(character != null)
 			{
-		  System.out.println("name:" + " " + character.getName() + " " + "health:" + " " + character.getHealth() + " " + "power:" + " " + character.getPower());
+			  System.out.println("name:" + " " + character.getName()); 
+			  System.out.println("health:" + " " + character.getHealth());
+			  System.out.println("power:" + " " + character.getPower() + "\n");
 			}
 			
 		}

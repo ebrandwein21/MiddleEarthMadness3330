@@ -7,7 +7,6 @@ public class MiddleEarthCouncil {
 	private static MiddleEarthCouncil instance;
 	private static CharacterManager instance1;
 	
-	
 	/**
 	 * made constructor private (empty) to prevent more than one instance being made
 	 */
@@ -25,9 +24,9 @@ public class MiddleEarthCouncil {
 	
 	public static MiddleEarthCouncil getInstance()
 	{
-		if(instance == null) {
+		if(instance == null) 
+		{
 			instance = new MiddleEarthCouncil();
-			
 		}
 		return instance;
 	}
@@ -38,10 +37,12 @@ public class MiddleEarthCouncil {
 	 * @return instance1
 	 * this returns the instance of the class so it can be used 
 	 */
-	public CharacterManager getCharacterManager() {
-		if(instance1 == null) {
+	public CharacterManager getCharacterManager() 
+	{
+		if(instance1 == null) 
+		{
 			instance1 = new CharacterManager();
-		}
+	    }
 		return instance1;
 	}
 	

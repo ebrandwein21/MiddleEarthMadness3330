@@ -6,7 +6,8 @@ public class Orc extends MiddleEarthCharacter {
 		double health;
 		double power;
 		
-		public Orc(String name, double health, double power) {
+		public Orc(String name, double health, double power) 
+		{
 			super(name, health, power);
 		}
 		

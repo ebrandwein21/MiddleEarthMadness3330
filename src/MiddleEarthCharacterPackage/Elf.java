@@ -23,20 +23,22 @@ public class Elf extends MiddleEarthCharacter {
 		 */
 		
 		@Override
-		 boolean attack(MiddleEarthCharacter target)
-        {
+		public boolean attack(MiddleEarthCharacter target)
+         {
 			double damage;
 			double specialPower = power * 1.5;
 
 			if(target.getRace().equals("Dwarf") || target.getRace().equals("Elf"))
-				{
-				    return false;
-				}
+		    {
+				return false;
+			}
+			
 			if(target.getRace().equals("Orc"))
 			{
 			    damage = getPower() + specialPower;
 				target.setHealth(target.getHealth() - damage);
 			}
+			
 			damage = getPower();
 			target.setHealth(target.getHealth() - damage);
 			return true;

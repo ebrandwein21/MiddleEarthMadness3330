@@ -6,7 +6,8 @@ public class Wizard extends MiddleEarthCharacter {
 		double health;
 		double power;
 		
-		public Wizard(String name, double health, double power) {
+		public Wizard(String name, double health, double power) 
+		{
 			super(name, health, power);
 		}
 		/**
@@ -28,9 +29,9 @@ public class Wizard extends MiddleEarthCharacter {
 			double specialPower = power * 1.5;
 
 			if(target.getRace().equals("Human") || target.getRace().equals("Wizard"))
-				{
+			{
 				    return false;
-				}
+			}
 			if(target.getRace().equals("Dwarf"))
 			{
 				damage = getPower() + specialPower;
