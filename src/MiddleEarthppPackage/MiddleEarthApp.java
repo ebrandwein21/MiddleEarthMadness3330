@@ -175,18 +175,18 @@ public class MiddleEarthApp {
 			else if(userChoice == 4) {
 				MiddleEarthCharacter c;
 				while(true) {
+					System.out.println("Which character would you like to delete?");
 					c = cm.getCharacter(scanner.next());
 					if(c == null) {
 						System.out.println("Try again");
 					}
 					else {
+						cm.deleteCharacter(c);
 						break;
 					}
 					
-					cm.deleteCharacter(c);
 				}
 				
-				System.out.println("Which character would you like to delete?");
 			}
 			else if(userChoice == 5) {
 				

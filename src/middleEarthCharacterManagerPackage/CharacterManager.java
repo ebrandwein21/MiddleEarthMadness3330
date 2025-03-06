@@ -70,7 +70,7 @@ public class CharacterManager {
 	
 	public MiddleEarthCharacter getCharacter(String name){
 		  for(int i = 0; i < size; i++) {
-			if(name.toLowerCase().equals(characters[i].getName().toLowerCase())){
+			if(name.equalsIgnoreCase(characters[i].getName())){
 				 return characters[i];
 			}
 		  }
@@ -112,22 +112,27 @@ public class CharacterManager {
 	 */	
 	public boolean deleteCharacter(MiddleEarthCharacter character) {
 		
-		int index = 0;
+		int index = -1;
 		
 		for(int i = 0; i < size; i++)
 		{
-			if(characters[i].getName().equals(character.getName()))
+			if(characters[i].getName().equalsIgnoreCase(character.getName()))
 			{
 				index = i;
+				break;
 			}
 		}
-		characters[index] = null;
+		
+		if(index == -1) {
+			return false;
+		}
 		
 		for(int j = index; j < size - 1; j++)
 		{			
 			characters[j] = characters[j + 1];
 		}
-		size -= 1;
+		characters[size - 1] = null;
+		size--;
 		return true;
 	}
 	
