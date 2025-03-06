@@ -223,15 +223,6 @@ public class MiddleEarthApp {
 					System.out.println("character to be deleted");
 					if(c == null) {
 						System.out.println("Try again");
-<<<<<<< HEAD
-				}
-				else 
-				{
-				   break;
-				}
-			}
-				cm.deleteCharacter(c);
-=======
 					}
 					else {
 						System.out.println("character to be deleted: " + c.getName());
@@ -244,7 +235,6 @@ public class MiddleEarthApp {
 						break;
 					}
 				}
->>>>>>> 62044cd4dc4025a530338f867a709b9c90191784
 			}
 			/*
 			 * user choice five asks the user if they would like to execute all attacks for the available character if there are two or more characters or available
@@ -283,6 +273,5 @@ public class MiddleEarthApp {
 		}
 	}
 }
-			
 			
 		
