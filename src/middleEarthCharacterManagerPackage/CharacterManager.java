@@ -94,7 +94,7 @@ public class CharacterManager {
 		{
 			return false;
 		}
-		if(character.getName().equals(name) || character.getHealth() != health || character.getPower() != power) {
+		if(!character.getName().equals(name) || character.getHealth() != health || character.getPower() != power) {
 			character.setPower(power);
 			character.setName(name);
 			character.setHealth(health);
@@ -104,13 +104,40 @@ public class CharacterManager {
 	}
 		
 	boolean deleteCharacter(MiddleEarthCharacter character) {
-		return true;
+		
+		int index = 0;
+		
+		for(int i = 0; i < size; i++)
+		{
+			if(characters[i].getName() == character.getName())
+			{
+				index = i;
+			}
+		}
+		characters[index] = null;
+		
+		for(int j = index; j < size - 1; j++)
+		{
+			//we want to delete the element at i and shift all elements to the the right left
+			
+			characters[j] = characters[j + 1];
+			
+		}
+		size -= 1;
+		return false;
+		
 	}
 	
 	public void displayAllCharacters() {
 		for(MiddleEarthCharacter character : characters)
 		{
+			try {
 		  System.out.println("name:" + " " + character.getName() + " " + "health:" + " " + character.getHealth() + " " + "power:" + " " + character.getPower());
+			}
+			catch(NullPointerException e)
+			{
+				System.out.print("NullPointerException caught");
+			}
 		}
 	}
 	
