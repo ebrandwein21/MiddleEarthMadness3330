@@ -117,8 +117,11 @@ public class MiddleEarthApp {
 				continue;
 			}
 			
+			/*
+			 * User Choice 2 displays all characters currently in character array
+			 */
 			else if(userChoice == 2) {
-				
+				cm.displayAllCharacters();
 			}
 			else if(userChoice == 3) {
 				

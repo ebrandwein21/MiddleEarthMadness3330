@@ -107,7 +107,7 @@ public class CharacterManager {
 		return true;
 	}
 	
-	void displayAllCharacters() {
+	public void displayAllCharacters() {
 		for(MiddleEarthCharacter character : characters)
 		{
 		  System.out.println("name:" + " " + character.getName() + " " + "health:" + " " + character.getHealth() + " " + "power:" + " " + character.getPower());
