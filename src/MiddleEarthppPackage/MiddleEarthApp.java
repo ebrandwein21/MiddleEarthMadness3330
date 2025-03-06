@@ -169,11 +169,22 @@ public class MiddleEarthApp {
 					}
 				}
 				
-				cm.updateCharacter(c, name, health, power);
+				cm.deleteCharacter(c);
 				
 			}
 			else if(userChoice == 4) {
+				MiddleEarthCharacter c;
+				while(true) {
+					c = cm.getCharacter(scanner.next());
+					if(c == null) {
+						System.out.println("Try again");
+					}
+					else {
+						break;
+					}
+				}
 				
+				System.out.println("Which character would you like to delete?");
 			}
 			else if(userChoice == 5) {
 				
