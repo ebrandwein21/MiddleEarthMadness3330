@@ -18,6 +18,6 @@ Object Oriented Concepts:
 **Running the Code:**
 There are no dependencies needed to run the code. To run the code simply type:
 
-git clone https://github.com/ebrandwein21/MiddleEarthMadness3330.git
-ensure that eclipse has found the src folder (which should be done by default)
-Hit the run button on eclipse. There should be output from main to demonstrate the code functions.
+	git clone https://github.com/ebrandwein21/MiddleEarthMadness3330.git	
+	ensure that eclipse has found the src folder (which should be done by default)
+	Hit the run button on eclipse. There should be output from main to demonstrate the code functions.
